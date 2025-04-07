@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>भारत दर्शन - Main Page</title>
+  <title>भारत दर्शन</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,14 +15,41 @@
       text-align: center;
       color: #2c3e50;
     }
-    /* Add your actual Bharat Darshan content styles here */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      transition: transform 0.2s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .card a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: block;
+    }
   </style>
 </head>
 <body>
-  <h1>भारत दर्शन - मुख्य पृष्ठ</h1>
-  
-  <p style="text-align:center; font-size: 1.2rem;">यहाँ भारत के हर राज्य, संस्कृति, इतिहास और भौगोलिक विशेषताओं की पूरी जानकारी होगी।</p>
+  <h1>Welcome to भारत दर्शन</h1>
 
-  <!-- Aage ka content yahin add karna hai -->
+  <div class="cards">
+    <div class="card">
+      <a href="main.html">🇮🇳 भारत दर्शन</a>
+    </div>
+  </div>
+
 </body>
 </html>
