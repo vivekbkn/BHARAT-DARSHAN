@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>प्रोग्रामिंग सीखें</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      display: flex;
+      background-color: #f5f5f5;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50;
+      height: 100vh;
+      padding: 1rem;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .sidebar h2 {
+      color: #fff;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #ecf0f1;
+      text-decoration: none;
+      margin: 0.5rem 0;
+      padding: 0.3rem 0.5rem;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    /* Content area */
+    .content {
+      margin-left: 240px;
+      padding: 2rem;
+      flex: 1;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+      padding: 1rem;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .section h2 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+    pre {
+      background: #eee;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar menu -->
+  <div class="sidebar">
+    <h2>📘 टॉपिक्स</h2>
+    <a href="#variables">Variables (वेरिएबल)</a>
+    <a href="#functions">Functions (फंक्शन्स)</a>
+    <a href="#modules">Modules (मॉड्यूल्स)</a>
+    <!-- और टॉपिक्स जोड़ सकते हैं -->
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    
+    <div id="variables" class="section">
+      <h2>📦 Variables (वेरिएबल)</h2>
+      <p>वेरिएबल्स वो containers होते हैं जो डेटा को स्टोर करते हैं।</p>
+      <pre><code>Python:
+name = "Amit"
+age = 25</code></pre>
+    </div>
+
+    <div id="functions" class="section">
+      <h2>🔧 Functions (फंक्शन्स)</h2>
+      <p>Functions कोड के टुकड़े होते हैं जिन्हें बार-बार चलाया जा सकता है।</p>
+      <pre><code>Python:
+def greet(name):
+    print("Hello, " + name)</code></pre>
+    </div>
+
+    <div id="modules" class="section">
+      <h2>📦 Modules (मॉड्यूल्स)</h2>
+      <p>Modules में हम अलग-अलग फाइल्स या libraries को import कर सकते हैं।</p>
+      <pre><code>Python:
+import math
+print(math.sqrt(16))</code></pre>
+    </div>
+
+  </div>
+
+</body>
+</html>
