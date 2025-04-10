@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basics - Sidebar Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #f5f5f5;
+      padding: 20px;
+      height: 100vh;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      overflow-y: auto;
+    }
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .sidebar a {
+      display: block;
+      padding: 8px;
+      margin-bottom: 6px;
+      color: #333;
+      text-decoration: none;
+      border-left: 4px solid transparent;
+    }
+    .sidebar a:hover {
+      background-color: #ddd;
+      border-left: 4px solid #007bff;
+    }
+    .content {
+      margin-left: 240px;
+      padding: 20px;
+      flex: 1;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>HTML Topics</h2>
+    <a href="#intro">Introduction</a>
+    <a href="#structure">HTML Structure</a>
+    <a href="#tags">Common Tags</a>
+    <a href="#attributes">Attributes</a>
+    <a href="#lists">Lists</a>
+    <a href="#tables">Tables</a>
+    <a href="#forms">Forms</a>
+  </div>
+
+  <div class="content">
+    <div class="section" id="intro">
+      <h2>Introduction</h2>
+      <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages.</p>
+    </div>
+
+    <div class="section" id="structure">
+      <h2>HTML Structure</h2>
+      <p>Basic structure includes doctype, html, head, and body tags.</p>
+    </div>
+
+    <div class="section" id="tags">
+      <h2>Common Tags</h2>
+      <p>Some common tags are: <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;a&gt;</code>, etc.</p>
+    </div>
+
+    <div class="section" id="attributes">
+      <h2>Attributes</h2>
+      <p>Attributes provide additional information about elements, like <code>href</code> in <code>&lt;a&gt;</code> tag.</p>
+    </div>
+
+    <div class="section" id="lists">
+      <h2>Lists</h2>
+      <p>HTML supports ordered (<code>&lt;ol&gt;</code>) and unordered (<code>&lt;ul&gt;</code>) lists.</p>
+    </div>
+
+    <div class="section" id="tables">
+      <h2>Tables</h2>
+      <p>Tables are created using <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, and <code>&lt;th&gt;</code>.</p>
+    </div>
+
+    <div class="section" id="forms">
+      <h2>Forms</h2>
+      <p>Forms are used to collect user input. Common elements are <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, <code>&lt;button&gt;</code>.</p>
+    </div>
+  </div>
+
+</body>
+</html>
