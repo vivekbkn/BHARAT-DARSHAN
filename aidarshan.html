@@ -1,166 +1,236 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AI दर्शन - Darshan</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8; /* हल्का नीला बैकग्राउंड */
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #2c3e50; /* गहरा नीला */
-            color: white;
-            padding: 1.5em;
-            text-align: center;
-        }
-        .container {
-            width: 85%;
-            margin: 2em auto;
-        }
-        .section {
-            margin-bottom: 2em;
-            padding: 1.5em;
-            background-color: #ffffff; /* सफेद बैकग्राउंड */
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease; /* हल्का एनिमेशन */
-        }
-        .section:hover {
-            background-color: #ecf0f1; /* हल्का ग्रे जब होवर हो */
-        }
-        h2 {
-            color: #2c3e50; /* गहरा नीला हेडिंग */
-            font-size: 1.6em;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            color: #555; /* थोड़ा हल्का ग्रे */
-        }
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: relative;
-            width: 100%;
-            bottom: 0;
-        }
-        a {
-            color: #3498db; /* लिंक का रंग नीला */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .bottom-margin {
-            margin-bottom: 4em; /* पेज के नीचे ज्यादा मार्जिन */
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI दर्शन</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+    }
+
+    .container {
+      width: 85%;
+      margin: 2em auto;
+    }
+
+    .section {
+      margin-bottom: 2em;
+      padding: 1.5em;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .section:hover {
+      background-color: #ecf0f1;
+    }
+
+    h2 {
+      color: #2c3e50;
+      font-size: 1.6em;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      position: relative;
+      width: 100%;
+      bottom: 0;
+    }
+
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .bottom-margin {
+      margin-bottom: 4em;
+    }
+
+    /* Grid for AI Tools */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* हर row में 3 कार्ड */
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1.5em;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background-color: #ecf0f1;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media screen and (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<header>
+<!-- First Section: AI Darshan -->
+<section class="section">
+  <header>
     <h1>AI दर्शन - कृत्रिम बुद्धिमत्ता</h1>
+  </header>
+
+  <div class="container">
+    <!-- Combined Info Section -->
+    <div>
+      <h2>1. एआई क्या है? (What is AI?)</h2>
+      <p>कृत्रिम बुद्धिमत्ता (Artificial Intelligence) कंप्यूटर विज्ञान की वह शाखा है, जो मशीनों को मानवीय बुद्धि की तरह सोचने, सीखने, निर्णय लेने और समस्याएँ हल करने योग्य बनाती है।<br>
+      AI का मूल उद्देश्य है — मशीनें ऐसी बनाना जो <strong>perception (अनुभव)</strong>, <strong>reasoning (तर्क)</strong> और <strong>learning (सीखना)</strong> कर सकें।<br>
+      उदाहरण: Google Search के सुझाव, Netflix की recommendation, Voice Assistants जैसे Siri, Alexa आदि।</p>
+
+      <h2>2. एआई के प्रकार (Types of AI)</h2>
+      <p>AI को मुख्यतः तीन श्रेणियों में बांटा जाता है:<br>
+      <strong>1. Narrow AI (कमज़ोर एआई):</strong> विशेष कार्यों में निपुण — जैसे चेहरा पहचानना, ईमेल spam filter करना।<br>
+      <strong>2. General AI (सामान्य एआई):</strong> जो किसी भी कार्य को इंसानों की तरह कर सके — जैसे एक इंसान पढ़ता, सोचता, बनाता है।<br>
+      <strong>3. Super AI (सुपर एआई):</strong> जो इंसानी बुद्धिमत्ता से भी कहीं आगे हो — भविष्य में सम्भावित।</p>
+
+      <h2>3. एआई के मूल तत्व (Basics of AI)</h2>
+      <p>AI इन बुनियादी तकनीकों पर आधारित है:<br>
+      <strong>Machine Learning (ML):</strong> डेटा से सीखना और अनुभव के आधार पर सुधार करना।<br>
+      <strong>Neural Networks:</strong> इंसानी मस्तिष्क की नकल करने वाले एल्गोरिद्म।<br>
+      <strong>Natural Language Processing (NLP):</strong> भाषा को समझना और उस पर काम करना।<br>
+      <strong>Computer Vision:</strong> छवियों/वीडियो को पहचानना और विश्लेषण करना।</p>
+
+      <h2>4. उन्नत एआई अवधारणाएं (Advanced AI Concepts)</h2>
+      <p>यहाँ वे अवधारणाएं आती हैं जो गहरी तकनीकी समझ मांगती हैं:<br>
+      <strong>Deep Learning:</strong> multi-layered neural networks जो बड़े डेटा से गहराई से सीखते हैं।<br>
+      <strong>Reinforcement Learning:</strong> ट्रायल और एरर के माध्यम से सीखना।<br>
+      <strong>Generative AI:</strong> नई सामग्री (text, image, audio) बना सकने की क्षमता — जैसे ChatGPT, Midjourney।<br>
+      <strong>Ethical AI & Bias:</strong> नैतिकता, भेदभाव, गोपनीयता जैसे प्रश्नों पर फोकस।</p>
+
+      <h2>5. भारत में एआई की स्थिति (AI in India)</h2>
+      <p>भारत में AI का विकास तेज़ी से हो रहा है:<br>
+      - राष्ट्रीय एआई नीति (National AI Strategy) नीति आयोग द्वारा<br>
+      - AI for All प्रोग्राम<br>
+      - AI स्टार्टअप्स जैसे Yellow.ai, Haptik, Arya.ai<br>
+      - स्वास्थ्य, कृषि, शिक्षा, न्याय में AI का प्रयोग बढ़ रहा है।</p>
+
+      <h2>6. वैश्विक एआई की स्थिति व भविष्य (AI in the World & Future)</h2>
+      <p>- अमेरिका, चीन, यूरोप — एआई की दौड़ में सबसे आगे।<br>
+      - OpenAI, Google DeepMind, Meta AI — अग्रणी संस्थाएं।<br>
+      - AI regulation पर बहस — "AI को कैसे नियंत्रित किया जाए?"<br>
+      - भविष्य: मानव सहयोगी रोबोट्स, बायोनिक इंटेलिजेंस, AGI (Artificial General Intelligence)</p>
+
+      <h2>7. एआई के लाभ और चुनौतियाँ (Benefits & Challenges)</h2>
+      <p><strong>लाभ:</strong><br>
+      - कार्यों में तेजी<br>
+      - हेल्थकेयर में डायग्नोसिस<br>
+      - शिक्षा को सुलभ बनाना<br>
+      - डेटा विश्लेषण<br>
+      <strong>चुनौतियाँ:</strong><br>
+      - नौकरियाँ खत्म होने का डर<br>
+      - नैतिकता और पूर्वाग्रह<br>
+      - निजता का हनन<br>
+      - AI को नियंत्रित करने का संकट</p>
+    </div>
+  </div>
+</section>
+
+<!-- Second Section: AI Tools -->
+<header>
+  <h1>एआई टूल्स</h1>
 </header>
 
 <div class="container">
-
-    <!-- Section 1: AI क्या है -->
-    <div class="section">
-        <h2>1. एआई क्या है? (What is AI?)</h2>
-        <p>कृत्रिम बुद्धिमत्ता (Artificial Intelligence) कंप्यूटर विज्ञान की वह शाखा है, जो मशीनों को मानवीय बुद्धि की तरह सोचने, सीखने, निर्णय लेने और समस्याएँ हल करने योग्य बनाती है।<br>
-        AI का मूल उद्देश्य है — मशीनें ऐसी बनाना जो <strong>perception (अनुभव)</strong>, <strong>reasoning (तर्क)</strong> और <strong>learning (सीखना)</strong> कर सकें।<br>
-        उदाहरण: Google Search के सुझाव, Netflix की recommendation, Voice Assistants जैसे Siri, Alexa आदि।</p>
+  <div class="grid">
+    <div class="card">
+      <a href="chatgpt.html">
+        <h3>ChatGPT</h3>
+        <p>बातचीत आधारित जनरेटिव एआई टूल।</p>
+      </a>
     </div>
-
-    <!-- Section 2: AI के प्रकार -->
-    <div class="section">
-        <h2>2. एआई के प्रकार (Types of AI)</h2>
-        <p>AI को मुख्यतः तीन श्रेणियों में बांटा जाता है:<br>
-        <strong>1. Narrow AI (कमज़ोर एआई):</strong> विशेष कार्यों में निपुण — जैसे चेहरा पहचानना, ईमेल spam filter करना।<br>
-        <strong>2. General AI (सामान्य एआई):</strong> जो किसी भी कार्य को इंसानों की तरह कर सके — जैसे एक इंसान पढ़ता, सोचता, बनाता है।<br>
-        <strong>3. Super AI (सुपर एआई):</strong> जो इंसानी बुद्धिमत्ता से भी कहीं आगे हो — भविष्य में सम्भावित।</p>
+    <div class="card">
+      <a href="midjourney.html">
+        <h3>Midjourney</h3>
+        <p>कलात्मक छवियाँ बनाने वाला AI टूल।</p>
+      </a>
     </div>
-
-    <!-- Section 3: AI के मूल तत्व -->
-    <div class="section">
-        <h2>3. एआई के मूल तत्व (Basics of AI)</h2>
-        <p>AI इन बुनियादी तकनीकों पर आधारित है:<br>
-        <strong>Machine Learning (ML):</strong> डेटा से सीखना और अनुभव के आधार पर सुधार करना।<br>
-        <strong>Neural Networks:</strong> इंसानी मस्तिष्क की नकल करने वाले एल्गोरिद्म।<br>
-        <strong>Natural Language Processing (NLP):</strong> भाषा को समझना और उस पर काम करना।<br>
-        <strong>Computer Vision:</strong> छवियों/वीडियो को पहचानना और विश्लेषण करना।</p>
+    <div class="card">
+      <a href="dalle.html">
+        <h3>DALL·E</h3>
+        <p>टेक्स्ट से इमेज बनाने वाला टूल।</p>
+      </a>
     </div>
-
-    <!-- Section 4: Advanced AI Concepts -->
-    <div class="section">
-        <h2>4. उन्नत एआई अवधारणाएं (Advanced AI Concepts)</h2>
-        <p>यहाँ वे अवधारणाएं आती हैं जो गहरी तकनीकी समझ मांगती हैं:<br>
-        <strong>Deep Learning:</strong> multi-layered neural networks जो बड़े डेटा से गहराई से सीखते हैं।<br>
-        <strong>Reinforcement Learning:</strong> ट्रायल और एरर के माध्यम से सीखना।<br>
-        <strong>Generative AI:</strong> नई सामग्री (text, image, audio) बना सकने की क्षमता — जैसे ChatGPT, Midjourney।<br>
-        <strong>Ethical AI & Bias:</strong> नैतिकता, भेदभाव, गोपनीयता जैसे प्रश्नों पर फोकस।</p>
+    <div class="card">
+      <a href="copilot.html">
+        <h3>GitHub Copilot</h3>
+        <p>कोडिंग में मदद करने वाला AI साथी।</p>
+      </a>
     </div>
-
-    <!-- Section 5: Current AI Tools -->
-    <div class="section">
-        <h2>5. वर्तमान एआई टूल्स (Current AI Tools & Platforms)</h2>
-        <p>आज कई शक्तिशाली AI टूल्स और प्लेटफॉर्म्स उपलब्ध हैं:<br>
-        <ul>
-            <li>ChatGPT: बातचीत आधारित उत्तर देने वाला जनरेटिव एआई</li>
-            <li>Midjourney: आर्ट जनरेशन</li>
-            <li>DALL·E: चित्रों का निर्माण</li>
-            <li>GitHub Copilot: कोड सुझाव</li>
-            <li>Bard, Claude, Pi: अन्य जनरेटिव AI चैटबॉट्स</li>
-            <li>Hugging Face: ओपन सोर्स एआई मॉडल</li>
-        </ul></p>
+    <div class="card">
+      <a href="bard.html">
+        <h3>Bard</h3>
+        <p>Google का जनरेटिव AI चैटबॉट।</p>
+      </a>
     </div>
-
-    <!-- Section 6: AI in India -->
-    <div class="section">
-        <h2>6. भारत में एआई की स्थिति (AI in India)</h2>
-        <p>भारत में AI का विकास तेज़ी से हो रहा है:<br>
-        - राष्ट्रीय एआई नीति (National AI Strategy) नीति आयोग द्वारा<br>
-        - AI for All प्रोग्राम<br>
-        - AI स्टार्टअप्स जैसे Yellow.ai, Haptik, Arya.ai<br>
-        - स्वास्थ्य, कृषि, शिक्षा, न्याय में AI का प्रयोग बढ़ रहा है।</p>
+    <div class="card">
+      <a href="claude.html">
+        <h3>Claude</h3>
+        <p>Anthropic द्वारा बनाया गया एआई सहायक।</p>
+      </a>
     </div>
-
-    <!-- Section 7: AI in the World -->
-    <div class="section">
-        <h2>7. वैश्विक एआई की स्थिति व भविष्य (AI in the World & Future)</h2>
-        <p>- अमेरिका, चीन, यूरोप — एआई की दौड़ में सबसे आगे।<br>
-        - OpenAI, Google DeepMind, Meta AI — अग्रणी संस्थाएं।<br>
-        - AI regulation पर बहस — "AI को कैसे नियंत्रित किया जाए?"<br>
-        - भविष्य: मानव सहयोगी रोबोट्स, बायोनिक इंटेलिजेंस, AGI (Artificial General Intelligence)</p>
-    </div>
-
-    <!-- Section 8: Benefits & Challenges of AI -->
-    <div class="section bottom-margin">
-        <h2>8. एआई के लाभ और चुनौतियाँ (Benefits & Challenges)</h2>
-        <p><strong>लाभ:</strong><br>
-        - कार्यों में तेजी<br>
-        - हेल्थकेयर में डायग्नोसिस<br>
-        - शिक्षा को सुलभ बनाना<br>
-        - डेटा विश्लेषण<br>
-        <strong>चुनौतियाँ:</strong><br>
-        - नौकरियाँ खत्म होने का डर<br>
-        - नैतिकता और पूर्वाग्रह<br>
-        - निजता का हनन<br>
-        - AI को नियंत्रित करने का संकट</p>
-    </div>
-
+  </div>
 </div>
 
 <footer>
-    <p>© 2025 AI दर्शन</p>
+  <p>© 2025 AI दर्शन</p>
 </footer>
 
 </body>
