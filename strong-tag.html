@@ -32,11 +32,11 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             border-left: 6px solid #4CAF50;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-section:hover {
-    transform: scale(1.01);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
+        }
+        section:hover {
+            transform: scale(1.01);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
         section h2 {
             text-align: center;
             color: #4CAF50;
@@ -51,14 +51,12 @@ section:hover {
             border-radius: 5px;
             font-size: 16px;
             font-family: monospace;
+            white-space: pre-wrap; /* Allow text to wrap */
+            word-wrap: break-word; /* Break long words */
+            max-width: 100%; /* Ensure it doesn't go beyond the screen */
+            box-sizing: border-box; /* Adjusts box model for proper layout */
+            overflow-wrap: break-word; /* Additional word wrap for overflow */
         }
-        pre {
-            white-space: pre-wrap; /* टेक्स्ट को व्रैप करने के लिए */
-            word-wrap: break-word; /* शब्द को तोड़कर व्रैप करने की अनुमति */
-            overflow-wrap: break-word; /* शब्दों को तोड़कर व्रैप करता है */
-            max-width: 100%; /* स्क्रीन के आकार के अनुसार टेक्स्ट को फिट करता है */
-            box-sizing: border-box; /* बॉक्स मॉडल को ठीक से काम करने के लिए */
-}
     </style>
 </head>
 <body>
