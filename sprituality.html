@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Spirituality • अध्यात्म</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function openPDF(pdfUrl) {
+      document.getElementById("pdfViewer").src = pdfUrl;
+    }
+  </script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <header class="bg-white shadow p-4 mb-6">
+    <h1 class="text-3xl font-bold text-center">🕉️ अध्यात्म • Spirituality</h1>
+    <p class="text-center text-gray-600">Explore Indian Spirituality</p>
+  </header>
+
+  <!-- Section 1: Sidebar with two cards -->
+  <section class="flex px-6 mb-8">
+    <!-- Sidebar -->
+    <div class="w-1/4 bg-white p-4 rounded-xl shadow-lg mr-6 border border-gray-300">
+      <div onclick="openPDF('https://drive.google.com/file/d/1r6pqc8bRyXQwpGTFqw5ViF4VDLPn_q59/preview')" class="cursor-pointer bg-white p-4 rounded-xl shadow hover:shadow-lg mb-6">
+        <h2 class="text-xl font-semibold">📘 भगवद गीता</h2>
+        <p class="text-gray-600">गीता का गूढ़ ज्ञान और उपदेश</p>
+      </div>
+      <div onclick="openPDF('https://drive.google.com/file/d/1yyN3lENWYlhotnuOXUcgCiXRUZQxxEq7/preview')" class="cursor-pointer bg-white p-4 rounded-xl shadow hover:shadow-lg">
+        <h2 class="text-xl font-semibold">📗 उपनिषद</h2>
+        <p class="text-gray-600">भारतीय दर्शन का मूल स्रोत</p>
+      </div>
+    </div>
+
+    <!-- PDF Viewer -->
+    <div class="w-3/4 bg-white shadow rounded-xl overflow-hidden border border-gray-300">
+      <iframe id="pdfViewer" class="w-full h-screen" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+</body>
+</html>
