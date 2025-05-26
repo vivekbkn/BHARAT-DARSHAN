@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.layout {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+}
+
+nav {
+    text-align: center;
+    width: 10%;
+    padding: 1rem;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+section {
+    width: 60%;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+aside {
+
+    width: 30%;
+    padding: 1rem;
+    border-left: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+aside h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: brown;
+    color: white;
+}
+
+footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: large;
+    flex-shrink: 0;
+}
+
+/* Optional: Scrollbar better visibility */
+nav,
+section,
+aside {
+    scrollbar-width: thin;
+    background-color: blanchedalmond;
+}
+
+
+nav,
+aside {
+    color: coral;
+    font-weight: bolder;
+
+}
+
+aside p {
+    margin: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: coral;
+}
+
+.shlok {
+    text-align: center;
+    border: 2px solid brown;
+    background-color: darkgoldenrod;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+.shlok p {
+    margin: 20px;
+}
